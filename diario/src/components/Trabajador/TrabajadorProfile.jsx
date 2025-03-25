@@ -126,7 +126,7 @@ const handleMisNoticias = () => {
 };
 
   return (
-    <div>
+    <section className='perfil' >
       <h1>Perfil del Trabajador</h1>
       {trabajador ? (
         <Form form={form} onFinish={handleUpdateProfile} encType="multipart/form-data">
@@ -191,7 +191,7 @@ const handleMisNoticias = () => {
       ) : (
         <p>Cargando perfil...</p>
       )}
-    </div>
+    </section>
   );
 };
 

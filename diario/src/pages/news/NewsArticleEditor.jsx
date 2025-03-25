@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import { Table, Form, Button, Modal, Select, Checkbox, Input, DatePicker, Popconfirm } from 'antd';
 import { EditOutlined, PlusOutlined, DeleteOutlined, CommentOutlined } from '@ant-design/icons';
 import axios from 'axios';
@@ -288,7 +288,7 @@ const NewsManagement = () => {
   };
 
   return (
-    <div>
+    <div className='content-new-notice'>
       {/* Barra de búsqueda */}
       <div className="search-bar">
         <Input 
@@ -312,7 +312,7 @@ const NewsManagement = () => {
       </div>
 
       {/* Tabla de noticias */}
-      <Table columns={columns} dataSource={filteredNews} rowKey="id" />
+      <Table columns={columns}  dataSource={filteredNews} rowKey="id" />
 
       {/* Modal para crear/editar noticias */}
       <Modal

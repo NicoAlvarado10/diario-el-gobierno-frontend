@@ -15,21 +15,30 @@
   flex-wrap: wrap;
 }
 
+
+.content-new-notice{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
 .search-bar {
   flex: 1;
   min-width: 250px;
   margin-top: 16px;
+
 }
 
 .add-news-button {
   margin-bottom: 0;
+
 }
 
 /* Table styles */
 .ant-table-wrapper {
-  overflow-x: auto;
+  overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 16px;
+  padding: 0 2rem;
 }
 
 .ant-table {
